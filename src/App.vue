@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <the-header></the-header>
-    <the-jumbo></the-jumbo>
+    <the-jumbo/>
     <the-main></the-main>
     <the-footer></the-footer>
     
