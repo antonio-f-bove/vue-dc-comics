@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <the-header></the-header>
-    <the-jumbo/>
-    <the-main></the-main>
-    <select-buy-comics/>
-    <the-footer></the-footer>
+    <the-header :nav="navItems" />
+    <the-jumbo />
+    <the-main />
+    <select-buy-comics />
+    <the-footer />
     
   </div>
 </template>
@@ -25,6 +25,22 @@ export default {
     TheJumbo,
     SelectBuyComics
   },
+  data() {
+    return {
+      navItems: [
+        'CHARACTERS',
+        'COMICS',
+        'MOVIES',
+        'TV',
+        'GAMES',
+        'COLLECTIBLES',
+        'VIDEOS',
+        'FANS',
+        'NEWS',
+        'SHOP'
+      ],
+    }
+  }
 };
 </script>
 

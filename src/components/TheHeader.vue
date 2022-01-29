@@ -2,21 +2,14 @@
   <header>
     <div class="container">
       <div class="logo-container">
-        <img src="../assets/dc-logo.png" alt="">
+        <img src="../assets/dc-logo.png">
       </div>
 
       <nav>
         <ul>
-          <li>CHARACTERS</li>
-          <li>COMICS</li>
-          <li>MOVIES</li>
-          <li>TV</li>
-          <li>GAMES</li>
-          <li>COLLECTIBLES</li>
-          <li>VIDEOS</li>
-          <li>FANS</li>
-          <li>NEWS</li>
-          <li>SHOP</li>
+          <li v-for="(item, i) in nav" :key="i">
+            {{ item }}
+          </li>
         </ul>
       </nav>
     </div>
@@ -25,7 +18,9 @@
 
 <script>
 export default {
-  
+  props: {
+    nav: Array,
+  }
 }
 </script>
 
