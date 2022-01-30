@@ -5,18 +5,11 @@
         <div class="container">
           <div class="row">
             <div class="lists-container">
-              <div class="list">
-                <h2>DC COMICS</h2>
-                <ul>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                </ul>
-              </div>
+              <list-footer v-for="(item, i) in items" 
+              :key="i" 
+              :list="item" 
+              class="list-footer"
+              />
             </div>
 
             <div class="logo-container">
@@ -38,8 +31,15 @@
 </template>
 
 <script>
+import ListFooter from './ListFooter.vue'
+
 export default {
-  
+  components: {
+    ListFooter
+  },
+  props: {
+    items: Array
+  }
 }
 </script>
 
@@ -50,7 +50,7 @@ export default {
   .full-width {
     background: url('../assets/footer-bg.jpg') center;
     background-size: cover;
-    height: 300px;
+    height: 360px;
 
     color: #fff;
   }
@@ -68,18 +68,13 @@ export default {
     .lists-container {
       width: 50%;
       padding: 36px 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-start;
 
-      .list{
-        h2 {
-          margin-bottom: .5em;
-        }
-        ul {
-          list-style: none;
-          li {
-            font-size: 14px;
-            margin-top: .2em;
-          }
-        }
+      .list-footer {
+        margin-right: 36px;
       }
     }
 
@@ -91,6 +86,13 @@ export default {
         transform: translateY(-15%);
       }
     }
+  }
+}
+
+.lower {
+  .full-width {
+    height: 100px;
+    background-color: #333;
   }
 }
 

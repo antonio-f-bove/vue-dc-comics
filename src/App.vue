@@ -4,7 +4,7 @@
     <the-jumbo />
     <the-main :cards="comics" />
     <select-buy-comics />
-    <the-footer />
+    <the-footer :items="footerItems" />
   </div>
 </template>
 

@@ -36,7 +36,7 @@ export default {
 @import '../style/variables.scss';
 
 main {
-  background: #333;
+  background: #222;
 
   .container {
     width: $container-width;
