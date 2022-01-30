@@ -112,6 +112,53 @@ export default {
           "type": "graphic novel"
         }
       ],
+      footerItems: [
+        {
+          label: 'DC COMICS',
+          items: [
+            'Characters',
+            'Comics',
+            'Movies',
+            'TV',
+            'Games',
+            'Videos',
+            'News'
+          ]
+        },
+        {
+          label: 'SHOP',
+          items: [
+            'Shop DC',
+            'Shop DC Collectibles'
+          ]
+        },
+        {
+          label: 'DC',
+          items: [
+            'Terms of use',
+            'Privacy policy',
+            'Add Choices',
+            'Advertising',
+            'Jobs',
+            'Subscriptions',
+            'Talent Workshops',
+            'CPSC Certificates',
+            'Ratings',
+            'Shop Help',
+            'Contact Us'
+            ]
+        },
+        {
+          label: 'SITES',
+          items: [
+            'DC',
+            'MAD Magazine',
+            'DC Kids',
+            'DC Univers',
+            'DC Power Visa'
+          ]
+        }
+      ]
     }
   }
 };
